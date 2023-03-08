@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\bubblechat.png" />
+    <None Remove="img\copy.png" />
+    <None Remove="img\nerbala.mp4" />
+    <None Remove="img\nerbala2.png" />
+    <None Remove="img\trash.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="img\nerbala.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\bubblechat.png" />
+    <Resource Include="img\copy.png" />
+    <Resource Include="img\trash.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\nerbala2.png" />
+  </ItemGroup>
+
+</Project>
